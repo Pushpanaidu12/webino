@@ -1,0 +1,272 @@
+<html>
+<head>
+<script type="text/javascript" language="javascript">
+function validate_form()
+{
+	valid=true;
+	if(document.form.fname.value=="")
+	{
+		alert("Please Enter your First name");
+		valid=false;
+	}
+        if(document.form.lname.value=="")
+	{
+		alert("Please Enter your Last name");
+		valid=false;
+	}
+if(document.form.address.value=="")
+	{
+		alert("Please Enter your address");
+		valid=false;
+	}
+	
+	if(document.form.lnadme1.value=="")
+	{
+		alert("Please Enter your city");
+		valid=false;
+	}
+        if(document.form.lnadme2.value=="")
+	{
+		alert("Please Enter your street");
+		valid=false;
+	}
+        if(document.form.lnadme3.value=="")
+	{
+		alert("Please Enter your landmark");
+		valid=false;
+	}
+        if(document.form.email.value=="")
+	{
+		alert("Please Enter your Email ID");
+		valid=false;
+	}
+        
+if(document.form.mobile.value=="")
+	{
+		alert("Please Enter your Number");
+		valid=false;
+	}
+if(document.form.ta==0)
+	{
+		alert("Please Select no. of adults");
+		valid=false;
+	}
+if(document.form.taw==0)
+	{
+		alert("Please Select no. of children");
+		valid=false;
+	}
+	if(document.form.date==0)
+	{
+		alert("Please Select Date");
+		valid=false;
+	}
+	if(document.form.month1==0)
+	{
+		alert("Please Select Month of travel");
+		valid=false;
+	}
+
+	
+	
+	
+return valid;
+}
+</script> <style>
+div.transbox {
+    margin: 10px;
+    background-color: cyan;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+
+}
+div.transbox p {
+    margin: 2%;
+    
+    color: #000000;
+}
+th{
+    color:red;
+}
+table
+{
+
+font-family:"courier";
+}
+h2
+{
+letter-spacing: 8.6px
+ }
+
+</style>
+    
+ </head>
+    <body background="tra.jpg" >
+        
+           <div align="center">
+                 <div class="transbox">
+               <h1 >Registration Form</h1></div>
+               <br><br>
+               <hr color="red" width="100%" height=" 20">
+                   ></div>
+        <div class="transbox1">
+      
+            
+ <CENTER><H2> <font color="white" style="courier"><U>GUEST DETAILS </U></H2>
+
+ <form action="LAST.html" method="POST" align="center" name="form"onSubmit="return validate_form();">
+            <table align="center">
+                
+                
+                <tr>
+                    <th>First Name:</th>
+                    <td><input type="text" name="fname"  size="35"><td>
+                </tr>
+                <tr>
+                    <th>last Name:</th>
+                    <td><input type="text" name="lname" size="35"></td>
+                </tr>
+                <tr>
+                    <th>Address:</th>
+                    <td><textarea rows=4 cols=35 name="address"></textarea></td>
+                </tr>
+<tr>
+                    <th>city:</th>
+                   <td><input type="text" name="lnadme1" size="35"></td>
+                </tr>
+<tr>
+<tr>
+                    <th>Street:</th>
+                   <td><input type="text" name="lnadme2" size="35"></td>
+                </tr>
+<tr>
+<tr>
+                    <th>Landmark:</th>
+                   <td><input type="text" name="lnadme3" size="35"></td>
+                </tr>
+<tr>
+                    <th>E-mail_id</th>
+                    <td><input type="text" name="f1name"  size="35"><td>
+                </tr>
+                <tr>
+       <tr>
+                    <th>Mobile_ no :</th>
+                    <td><input type="text" name="mobile"  size="35"><td>
+                </tr>
+                <tr>
+<tr>
+                    <th>No of Adults :</th>
+                    <td><select name="ta"><option> 1</option><option> 2</option><option> 3</option> </select><td>
+                </tr>
+                <tr>
+<tr>
+                    <th>No of Childs:</th>
+                    <td><select name="taw"><option> 1</option><option> 2</option><option> 3</option> </select><td>
+                </tr>
+                <tr>
+ 
+                    <th>Date of journey</th>
+                    <td><select name="date">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    
+                        <select name="month1">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>Aug</option>
+                        <option>Sept</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                        </select>
+</td></tr>
+
+</table>
+
+<h2><center> <font color="black"><u>PAYMENT DETAILS </u></H2></CENTER>
+<table align="center">
+<tr>
+<th> we accept : </th>
+<td> <strong> VISA</strong> </b> <input type="radio" value="visa"  name="f1">
+MASTERCARD  <input type="radio" value="mcard"  name="f1">
+ AMERICAN EXPRESS  <input type="radio" value="amer"  name="f1"></td>
+</tr>
+
+<tr>
+<th> Expiry date </th>
+<td> <select name="month2">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>Aug</option>
+                        <option>Sept</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                        </select>
+                    
+                        <select name="year">
+                         <option>1994</option>
+                         <option>1995</option>
+                         <option>1996</option>
+                         <option>1997</option>
+                         <option>1998</option>
+                         <option>1999</option>
+                         <option>2000</option>
+                        </select>
+                    </td>
+                </tr>
+<tr>
+<th> Name_on _card: </th>
+<td>
+<input type="text" name="las" size="9"></td>
+</tr>
+ <tr>
+                    <td></td>
+                    <td><input type="submit" onclick="LAST.html">  <input type="reset"></td>
+                </tr>
+</table>
+
+
+<h3 >#NOTE: Inorder to protect your card from fraudulent transactions we might redirect you to a site that will verify before u procceed to payment </h3>
+ 

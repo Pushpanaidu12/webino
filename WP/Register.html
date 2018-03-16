@@ -1,0 +1,206 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <script type="text/javascript" language="javascript">
+function validate_form()
+{
+	valid=true;
+	if(document.form.fname.value=="")
+	{
+		alert("Please Enter your First name");
+		valid=false;
+	}
+        if(document.form.lname.value=="")
+	{
+		alert("Please Enter your Last name");
+		valid=false;
+	}
+	
+	if(document.form.uname.value=="")
+	{
+		alert("Please Enter your Username");
+		valid=false;
+	}
+        if(document.form.password.value=="")
+	{
+		alert("Please Enter your password");
+		valid=false;
+	}
+        if(document.form.mob.value=="")
+	{
+		alert("Please Enter your Phone no");
+		valid=false;
+	}
+        if(document.form.email.value=="")
+	{
+		alert("Please Enter your Email ID");
+		valid=false;
+	}
+        if(document.form.address.value=="")
+	{
+		alert("Please Enter your address");
+		valid=false;
+	}
+	if(document.form.date==0)
+	{
+		alert("Please Select Date");
+		valid=false;
+	}
+	if(document.form.month==0)
+	{
+		alert("Please Select Month");
+		valid=false;
+	}
+	if(document.form.year==0)
+	{
+		alert("Please Select Year");
+		valid=false;
+	}
+	
+	
+return valid;
+}
+</script>
+	
+
+
+        <style>
+       div.transbox {
+    margin: 10px;
+    background-color:lightseagreen;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+ div.transbox1 {
+    margin: 10px;
+    background-color:#ccccff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+}
+</style>
+    </head>
+    <body background="bg.jpg" >
+        <br><br>
+           <div align="center">
+                 <div class="transbox">
+               <h1 >Registration Form</h1></div>
+               <br><br>
+               <hr color="yellow"
+                   ></div>
+        <div class="transbox1">
+        <form action="RegisterDB.php" method="POST" align="center" name="form"onSubmit="return validate_form();">
+            <br>
+            <table align="center">
+                
+                <br>
+                <tr>
+                    <th>First Name:</th>
+                    <td><input type="text" name="fname"  size="35"><td>
+                </tr>
+                <tr>
+                    <th>last Name:</th>
+                    <td><input type="text" name="lname" size="35"></td>
+                </tr>
+                <tr>
+                    <th>Address:</th>
+                    <td><textarea rows=4 cols=35 name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Username:</th>
+                    <td><input type="text" name="uname" size="35"></td>
+                </tr>
+                <tr>
+                    <th>password:</th>
+                    <td><input type="password" name="password" size="35"></td>
+                </tr>
+                <tr>
+                    <th>Phone No:</th>
+                    <td><input type="text" name="mob" size="35"></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="text" name="email" size="35" style="color: buttonhighlight"></td>
+                </tr>
+                <tr>
+                    <th>DOB:</th>
+                    <td><select name="date">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    
+                        <select name="month">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>Aug</option>
+                        <option>Sept</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                        </select>
+                    
+                        <select name="year">
+                         <option>1994</option>
+                         <option>1995</option>
+                         <option>1996</option>
+                         <option>1997</option>
+                         <option>1998</option>
+                         <option>1999</option>
+                         <option>2000</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                <td><input type="submit">  <input type="reset"></td>
+                </tr>
+            
+            </table>
+            <br>
+        </form>
+        </div>
+    </body>
+</html>
